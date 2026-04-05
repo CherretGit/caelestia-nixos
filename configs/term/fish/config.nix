@@ -25,9 +25,7 @@
 
   interactiveShellInit = ''
     ${
-      if (use "caelestia.cli" "settings.theme.enableTerm" false)
-      then "cat ~/.local/state/caelestia/sequences.txt 2> /dev/null"
-      else ""
+      "cat ~/.local/state/caelestia/sequences.txt 2> /dev/null"
     }
   '';
   shellInitLast = ''
